@@ -129,11 +129,11 @@ class OPDBootInstallation(Screen):
     def checkReadWriteDir(self, configele):
         import os.path
         import Components.Harddisk
-        supported_filesystems = frozenset(('ext4', 'ext3', 'ext2', 'nfs'))
+        supportedFileSystems = frozenset(('ext4', 'ext3', 'ext2', 'nfs'))
         candidates = []
         mounts = Components.Harddisk.getProcMounts()
         for partition in Components.Harddisk.harddiskmanager.getMountedPartitions(False, mounts):
-            if partition.filesystem(mounts) in supported_filesystems:
+            if partition.fileSystem(mounts) in supportedFileSystems:
                 candidates.append(
                     (partition.description, partition.mountpoint))
 
