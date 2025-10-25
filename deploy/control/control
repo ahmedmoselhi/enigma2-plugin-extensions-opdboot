@@ -1,0 +1,9 @@
+Package: enigma2-plugin-extensions-opdboot
+Version:
+Description: OPD MultiBoot.
+Section: base
+Priority: optional
+Architecture: all
+License: unknown
+OE: oe-alliance
+Maintainer: formiano/ahmedmoselhi <ahmedmoselhi55@gmail.com>
